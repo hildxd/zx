@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		69FC5E0A29F6BB9A00E35CEC /* zxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FC5E0929F6BB9A00E35CEC /* zxApp.swift */; };
-		69FC5E0C29F6BB9A00E35CEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FC5E0B29F6BB9A00E35CEC /* ContentView.swift */; };
 		69FC5E0E29F6BB9B00E35CEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69FC5E0D29F6BB9B00E35CEC /* Assets.xcassets */; };
 		69FC5E1129F6BB9B00E35CEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69FC5E1029F6BB9B00E35CEC /* Preview Assets.xcassets */; };
 		69FC5E1C29F6BB9C00E35CEC /* zxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FC5E1B29F6BB9C00E35CEC /* zxTests.swift */; };
 		69FC5E2629F6BB9C00E35CEC /* zxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FC5E2529F6BB9C00E35CEC /* zxUITests.swift */; };
 		69FC5E2829F6BB9C00E35CEC /* zxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FC5E2729F6BB9C00E35CEC /* zxUITestsLaunchTests.swift */; };
+		69FE3F0429F6CC1E0038472B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE3F0329F6CC1E0038472B /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		69FC5E0629F6BB9A00E35CEC /* zx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69FC5E0929F6BB9A00E35CEC /* zxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zxApp.swift; sourceTree = "<group>"; };
-		69FC5E0B29F6BB9A00E35CEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		69FC5E0D29F6BB9B00E35CEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69FC5E1029F6BB9B00E35CEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		69FC5E1229F6BB9B00E35CEC /* zx.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = zx.entitlements; sourceTree = "<group>"; };
@@ -45,6 +44,7 @@
 		69FC5E2129F6BB9C00E35CEC /* zxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69FC5E2529F6BB9C00E35CEC /* zxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zxUITests.swift; sourceTree = "<group>"; };
 		69FC5E2729F6BB9C00E35CEC /* zxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		69FE3F0329F6CC1E0038472B /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				69FC5E0929F6BB9A00E35CEC /* zxApp.swift */,
-				69FC5E0B29F6BB9A00E35CEC /* ContentView.swift */,
+				69FE3F0329F6CC1E0038472B /* SwiftUIView.swift */,
 				69FC5E0D29F6BB9B00E35CEC /* Assets.xcassets */,
 				69FC5E1229F6BB9B00E35CEC /* zx.entitlements */,
 				69FC5E0F29F6BB9B00E35CEC /* Preview Content */,
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69FC5E0C29F6BB9A00E35CEC /* ContentView.swift in Sources */,
+				69FE3F0429F6CC1E0038472B /* SwiftUIView.swift in Sources */,
 				69FC5E0A29F6BB9A00E35CEC /* zxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,11 +424,14 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = zx;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hildxd.zx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -451,11 +454,14 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = zx;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hildxd.zx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
